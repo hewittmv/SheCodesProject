@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SheCodes Weather App</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+         <div class="container">
+      <h1>
+        City Weather 
+      </h1>
+     
+      <form id="search-form" class="row g-3">
+          <div class="row g-3">
+              <div class="col-sm-7">
+                <input type="text" id="search-input" placeholder="Enter City" aria-label="City">
+          </div> 
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3">Search</button>
+                   </div>
+      </form>
+      <button id="myLocation"> Current Location </button>
+      <h6>[Today's Date]</h6>
+      <div class="container text-center">
+                    <div class="row">
+            <div class="col-8">
+              <div class="row">
+                
+                  <div class="col-8 col-sm-6"> </br> <h2>[City]<h2> </div>
+                
+                  <div class="col-4 col-sm-6"> </br> <h3 id="city-Temp"> xx </h3></div> 
+             </div>
+             <div class="row">
+                  <div class="col-12"> </br> <h4> cum grano salis</h4> </div> 
+                                   </div>
+                                </div>
+                    ️                     
+                                          
+            <div class="col-4">
+            <div class="row">
+                <div class="col-6 col-sm-6"> Min <p id="minimum-temperature"> xx </p></div>
+                <div class="col-6 col-sm-6"> Max <p id="maximum-temperature"> xx </p></div>
+            </div>
+            <div class="row">
+              <div class="col-12"> <p id="icon"> ⛅ </p></div>
+              
+      </div>
+            </div>
+                    </div>
+            
+            
+                  
+
+      <script src="src/index.js"></script>
+    </div>
+  </body>
+</html>
