@@ -1,0 +1,85 @@
+body {
+  background: rgb(139, 195, 216, 0.2);
+}
+h1 {
+  color: rgb(64, 170, 209);
+  text-decoration-line: underline;
+}
+h2 {
+  font-size: 170%;
+}
+h4 {
+  font-style: italic;
+  font-size: 160%;
+}
+h3 {
+  font-size: 170%;
+}
+h6 {
+  padding: 6px;
+  border-radius: 7px;
+  background: linear-gradient(
+      360deg,
+      rgba(38, 168, 200, 0.7),
+      rgba(30, 169, 173, 0) 70.71%
+    ),
+    linear-gradient(
+      127deg,
+      rgba(125, 217, 240, 0.2),
+      rgba(26, 44, 46, 0) 50.71%
+    ),
+    linear-gradient(190deg, rgba(88, 173, 230, 0.2), rgba(0, 0, 250, 0) 70.71%);
+}
+.btn {
+  color: black;
+  background: linear-gradient(
+      360deg,
+      rgba(155, 35, 149, 0.1),
+      rgba(161, 202, 209, 0) 10.71%
+    ),
+    linear-gradient(100deg, rgba(66, 17, 82, 0.1), rgba(26, 44, 46, 0) 40.71%),
+    linear-gradient(346deg, rgba(85, 85, 145, 0.01), rgba(0, 0, 255, 0) 76.71%);
+  border-color: rgb(144, 194, 240);
+}
+.btn:hover {
+  background: rgb(64, 170, 209);
+}
+.col-8 .col-sm-6 {
+  font-size: 20px;
+  font-weight: 650;
+  background: rgb(207, 239, 250);
+}
+.col-4 {
+  background: rgb(207, 237, 250);
+  border-radius: 4px;
+}
+.col-8 {
+  background: rgb(207, 239, 250);
+  border-radius: 1px;
+}
+
+.col-4 .col-sm-6 {
+  background: rgb(207, 237, 250);
+}
+#icon {
+  font-size: 300%;
+}
+#myLocation {
+  padding: 2px;
+  display: block;
+  margin-left: 70%;
+  width: 150px;
+  border-color: rgb(144, 194, 240);
+  border-radius: 10px;
+  background: linear-gradient(
+      360deg,
+      rgba(155, 35, 149, 0.1),
+      rgba(161, 202, 209, 0) 10.71%
+    ),
+    linear-gradient(
+      360deg,
+      rgba(113, 201, 236, 0.8),
+      rgba(26, 44, 46, 0) 70.71%
+    ),
+    linear-gradient(346deg, rgba(85, 85, 145, 0.01), rgba(0, 0, 255, 0) 76.71%);
+}
