@@ -15,49 +15,60 @@
 
   <body>
          <div class="container">
-      <h1>
-        City Weather 
-      </h1>
-     
-      <form id="search-form" class="row g-3">
-          <div class="row g-3">
-              <div class="col-sm-7">
+      <div class="weather-app-wrapper">
+     <div class="weather-app">
+      <form id="search-form" class="mb-3">
+                  <div class="row">
+              <div class="col-9">
                 <input type="text" id="search-input" placeholder="Enter City" aria-label="City">
           </div> 
-          <div class="col-auto">
+          <div class="col-3">
             <button type="submit" class="btn btn-primary mb-3">Search</button>
                    </div>
-      </form>
-      <button id="myLocation"> Current Location </button>
+          </div>
+              </form>
+      
       <h6>[Today's Date]</h6>
       <div class="container text-center">
                     <div class="row">
             <div class="col-8">
+              <ul>
+                <li id="city-text">City </li>
+              </ul>
               <div class="row">
+                 <div class="col-md-8"> 
+                  <div class="d-flex weather-temperature">
+                <img src="" id= "icon" alt="" width="80px"/>
                 
-                  <div class="col-8 col-sm-6"> </br> <h2>[City]<h2> </div>
-                
-                  <div class="col-4 col-sm-6"> </br> <h3 id="city-Temp"> xx </h3></div> 
+                <h3 id="celsius-temp"></h3>
+                  <span class="units">
+<a href="#" id="celsius-link" class="active"> °C</a>
+<a href="#" id="fahrenheit-link">|°F</a>
+                </span> 
+              </div>
+              </div> 
              </div>
-             <div class="row">
-                  <div class="col-12"> </br> <h4> cum grano salis</h4> </div> 
-                                   </div>
-                                </div>                            
+             <ul>
+              <li id="weather-description"></li>
+             </ul>
+                    </div>
+                                                   
             <div class="col-4">
-            <div class="row">
-                <div class="col-6 col-sm-6"> Min <p id="minimum-temperature"> xx </p></div>
-                <div class="col-6 col-sm-6"> Max <p id="maximum-temperature"> xx </p></div>
+              <ul id="weather-detail">
+                <li> <strong>Min</strong> <span id="minimum-temperature"></span></li>
+                <li> <strong>Max</strong> <span id="maximum-temperature"></span></li>
+                <li><strong>Wind Speed</strong> <span id="wind-speed"></span></li>
+              </ul>
+<button id="myLocation"> My Location </button>
             </div>
-            <div class="row">
-              <div class="col-12"> <p id="icon"> ⛅ </p></div>
-                    </div>
-            </div>
-                    </div>
+                    
                     <P>
             <a href="https://github.com/hewittmv/SheCodesProject" target="_blank"> Open-Source Code </a> by Victoria Marsh
                     </P>
                   
       <script src="index.js"></script>
+      </div>
+    </div>
     </div>
   </body>
 </html>
