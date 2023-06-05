@@ -42,6 +42,7 @@ function showCityTemperature(response) {
   let minTemp = Math.round(response.data.main.temp_min);
   let maxTemp = Math.round(response.data.main.temp_max);
   let windSpeed = Math.round(response.data.wind.speed);
+  celsiusTemperature = response.data.main.temp;
   let minTempElement = document.querySelector("#minimum-temperature");
   let temperatureElement = document.querySelector("#celsius-temp");
   let maxTempElement = document.querySelector("#maximum-temperature");
@@ -49,7 +50,6 @@ function showCityTemperature(response) {
   let cityName = document.querySelector("#city-text");
   let windSpeedElement = document.querySelector("#wind-speed");
   let iconElement = document.querySelector("#icon");
-  celsiusTemperature = response.data.main.temp;
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
   minTempElement.innerHTML = `${minTemp}°C`;
   maxTempElement.innerHTML = `${maxTemp}°C`;
