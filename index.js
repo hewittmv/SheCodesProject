@@ -61,6 +61,12 @@ function showCityTemperature(response) {
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+  getForecast(response.data.coords);
+}
+function getForecast(coordinates) {
+  let apiKey = "6f578b96aa9505bcce148ac22cb85794";
+  let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${coords.lat}&lon=${coords.lon}&appid=${apiKey}`;
+  axios.get(apiUrl).then(displayForecast);
 }
 
 function searchCity(city) {
