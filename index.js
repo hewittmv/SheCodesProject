@@ -90,7 +90,7 @@ function getForecast(coords) {
 function showCityTemperature(response) {
   let minTemp = Math.round(response.data.main.temp_min);
   let maxTemp = Math.round(response.data.main.temp_max);
-  let windSpeed = Math.round(response.data.wind.speed);
+  let windSpeed = Math.round(response.data.wind.speed * 3.6);
   celsiusTemperature = response.data.main.temp;
   let minTempElement = document.querySelector("#minimum-temperature");
   let temperatureElement = document.querySelector("#celsius-temp");
